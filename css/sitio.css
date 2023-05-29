@@ -1,0 +1,224 @@
+/** menu */
+ 
+nav .brand-logo, .page-footer h2{
+font-weight: bold;
+}
+
+.sidenav {
+    width: 250px;
+}
+
+/** fin menu */
+
+
+/** what-is */
+.background-2{ 
+    max-width: 100%;
+    max-height: 100%;
+    background-size: cover;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    position: relative !important;
+} 
+
+/** fin what-is */
+
+
+.imagen {  
+    background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(imagen/katrina.jpg);/*oscureciendo imagen*/
+    background-repeat: no-repeat; 
+    background-position: 0px -5px;
+    background-size: cover;
+    background-attachment: fixed;   
+    height:90vh; 
+    margin-top:3;  
+}
+.fondo{  
+    color: rgb(248, 245, 245); 
+     
+}
+.imagenoferta01{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(imagen/oferta.png);/*oscureciendo imagen*/
+    background-size: cover;
+    background-repeat: no-repeat;  
+    max-width: 100%; 
+}
+ .imagenoferta02{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(imagen/oferta02.png);/*oscureciendo imagen*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100%; 
+ }
+
+.whatsapp-button {
+    display: inline-block;
+    background-color: #25D366;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+  }
+ 
+   
+
+
+
+/*carrusel*/ 
+
+    .carousel{  /*tamano centrado*/
+    display: flex; 
+   /* justify-content: center; 
+    align-items: center;*/
+    }
+    
+    @media(min-width: 368px){
+    .carousel{
+    margin: opx 60px;
+    }
+    }
+    
+   
+    
+    /*el cuerpo del carrusel*/
+    .carrusel-list{ 
+    display: flex;
+    align-items:center; 
+    width: fit-conten;
+    height: 304px; /*alto de la imagen en el item*/
+    padding: 10px 0px; 
+    margin: 0px 0px; /*ancho separacion del lado izquierdo*/
+    max-width:100vw; /*ancho separacion del lado derecho*/
+    overflow: hidden;
+    }
+    /*velocidad del carrusel transition-duration: .5s ease-in-out*/
+    .carrusel-track {
+    position:relative;
+    top:0;
+    left: 0;
+    display: flex;
+    justify-content: center; 
+    transition: .5s ease-in-out;
+    }
+    
+    .carrusel{
+    position: relative;
+    width: 210px;
+    padding: 0 18px;
+    float: left;
+    box-sizing: border-box;
+    display: flex;
+    height: 100%;
+    animation: carousel-slide 16s infinite; /*velocidad del movimiento*/
+    }
+    /*automatico*/
+    @keyframes carousel-slide {
+        0% {
+          transform: translateX(0);
+        }
+        25% {
+          transform: translateX(-100%);
+        }
+        50% {
+          transform: translateX(-200%);
+        }
+        75% {
+          transform: translateX(-300%);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+
+    .carrusel h4 {
+    position: absolute;
+   display: inline-block;
+  margin: 210px auto 0 auto;
+  color: #fff;
+    }
+    
+    .carrusel h4 small{
+    font-size: 15px; 
+    display: block; 
+    } 
+    
+    .carrusel a img{
+    object-fit: cover;
+    height: 300px;
+    width: 200px;
+    border-radius: 15px;
+    box-shadow:0 2px 5px 0 rgba(0,0,0,0.5);
+    transition: .3s ease-in-out;
+    }
+    
+    /*para dar espacio a las imagenes ancho*/
+    @media(min-width:768px){
+    .carrusel{
+    width: 290px;
+    }
+    .carrusel a img{
+    width: 250px;
+    }
+    }
+    
+    .carrusel-arrow{
+    border-radius: 30px;
+    background-color: #ffffff;
+    position: absolute;
+    z-index:4;
+    width:48px;
+    height:48px;
+    text-align: center;
+    border:0;
+    cursor: pointer;
+    }
+    
+    .carrusel-arrow:focus{
+    outline:0;
+    }
+    
+    .carrusel-arrow svg{
+    width:12px;
+    height:100%;
+    color: rgba(0,0,0,0.7);
+    }
+    
+    .carrusel-prov{
+    left:0px;
+    }
+    
+    .carrusel-next{
+    right: 0px;
+    }
+
+
+/*linea bajo de la letra  navbar*/
+    .underline {
+        width: 100%;
+        height: 2px;
+        background-color: black;
+        transform: scaleX(0);
+        transition: transform 0.3s ease-in-out;
+      }
+      
+      .nav-item:hover .underline {
+        transform: scaleX(1);
+      }
+
+/*linea de navbar*/
+.image-container {
+    display: flex;
+  }
+  
+  .img-size {
+    max-width: 100%;
+    max-height: 100%; 
+    object-fit: cover;
+  }
+/*CARRUSEL CON CARD*/
+ 
+.owl-carousel .owl-item img {
+    width: 100%;
+    height: 300px;
+  }
