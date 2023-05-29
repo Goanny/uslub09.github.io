@@ -18,8 +18,10 @@ font-weight: bold;
     background-size: cover;
     background-position: 50% 0;
     background-repeat: no-repeat;
-    position: relative !important;
+    position: relative !important; 
 } 
+
+
 
 /** fin what-is */
 
@@ -41,14 +43,17 @@ font-weight: bold;
     background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(imagen/oferta.png);/*oscureciendo imagen*/
     background-size: cover;
     background-repeat: no-repeat;  
-    max-width: 100%; 
+    max-width: 100%;  
 }
+ 
+
  .imagenoferta02{
     background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(imagen/oferta02.png);/*oscureciendo imagen*/
     background-size: cover;
     background-repeat: no-repeat;
     max-width: 100%; 
  }
+ 
 
 .whatsapp-button {
     display: inline-block;
